@@ -1,0 +1,25 @@
+{{variavelTeste}}
+
+<input type="text" [value]="variavelTeste" />
+
+<br />
+
+<input type="text" [(ngModel)]="variavelTeste" />
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<button (click)="adicionarElemento()">Adicinar</button>
+<br/>
+<span *ngFor="let elemento of lista">{{elemento}}<br/></span>
+
+
+<br/>
+<br/>
+<br/>
+
+{{getValor()}}
+
