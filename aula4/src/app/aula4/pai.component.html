@@ -1,0 +1,34 @@
+<span> Valor a ser passado para o filho um</span>
+<br />
+<input type="text" [(ngModel)]="valorFilhoUm"/>
+
+<br />
+<tar-filho-um [valor]="valorFilhoUm"></tar-filho-um>
+
+<br />
+<br />
+<tar-filho-dois (atualizarValorHandler)="onAtualizarValorHandler($event)"></tar-filho-dois>
+<br />
+
+<span> Valor atualizado do filho dois</span>
+<br />
+{{valorFilhoDois}}
+
+<br />
+
+<br />
+<span> Valor a ser passado para o componente três</span>
+<br />
+<input type="text" [(ngModel)]="valorFilhoTres"/>
+<br />
+<button (click)="atualizarValorFilhoTres()">Atualizar filho três</button>
+<br />
+<br />
+<tar-filho-tres></tar-filho-tres>
+<br />
+<br />
+<button (click)="recuperarValorDoFilhoTres()">Recuperar filho três</button>
+<br />
+<br />
+{{valorRecuperado}}
+
